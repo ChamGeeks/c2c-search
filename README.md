@@ -1,6 +1,27 @@
 # c2c-search
 AI search agent for camptocamp.org
 
+# Setup
+
+First time
+```
+pyenv global 3.11
+python -m venv ./venv
+pip install -r requirements.txt
+```
+
+Thereafter
+```
+pyenv 
+source ./venv/bin/activate
+pip install -r requirements.txt
+```
+
+Create and source a file containing your Openapi API key
+```
+export OPENAI_API_KEY=sk-blablabla...
+```
+
 # CLI usage
 ```commandline
 python chat-cli.py
