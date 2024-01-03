@@ -7,7 +7,7 @@ if __name__ == "__main__":
     limit = 100
     loader = Load()
     df = loader.load_routes(offset, limit)
-    offset = offset + limit    
+    offset = offset + limit
     df.to_csv(dataset_file, index=False)
     while len(df) > 0:
         df = loader.load_routes(offset, limit)

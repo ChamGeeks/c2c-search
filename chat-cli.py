@@ -1,13 +1,10 @@
 from typing import List
-#from fastapi import FastAPI
 from langchain.prompts import ChatPromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import BaseOutputParser, AIMessage, HumanMessage, SystemMessage
-#from langserve import add_routes
 from langchain.schema.runnable import RunnableParallel
 from langchain.schema.runnable import RunnableBranch
 import sys
-#import uvicorn
 import re
 import json
 import logging
@@ -75,7 +72,7 @@ if __name__ == "__main__":
     while True:
         response = chat(messages)
         # print(response)
-    #    response = chain.invoke({"text": user_input})
+        #    response = chain.invoke({"text": user_input})
         if is_json(response):
             # everything is inferred - json was returned
             # print(response)

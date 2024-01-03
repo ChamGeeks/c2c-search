@@ -12,12 +12,11 @@ pip install -r requirements.txt
 
 Thereafter
 ```
-pyenv 
 source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Create and source a file containing your Openapi API key
+Create and source a .env file containing your Openapi API key
 ```
 export OPENAI_API_KEY=sk-blablabla...
 ```
